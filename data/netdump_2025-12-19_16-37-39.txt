@@ -1,0 +1,137 @@
+tcpdump: WARNING: any: That device doesn't support promiscuous mode
+(Promiscuous mode not supported on the "any" device)
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+16:37:45.417603 wlo1  Out IP 192.168.0.108.52080 > 192.168.0.1.53: 40282+ [1au] HTTPS? ab.chatgpt.com. (43)
+16:37:45.930650 wlo1  Out IP 192.168.0.108.55814 > 157.90.91.73.443: Flags [.], ack 3177753092, win 54, options [nop,nop,TS val 2513998328 ecr 2626324099], length 0
+16:37:46.182150 wlo1  In  IP 157.90.91.73.443 > 192.168.0.108.55814: Flags [.], ack 1, win 487, options [nop,nop,TS val 2626370183 ecr 2513906840], length 0
+16:37:46.667626 wlo1  Out IP 192.168.0.108.52709 > 192.168.0.1.53: 5749+ [1au] HTTPS? clicks-inges-vjld0bvlni6m-1474043380.us-east-1.elb.amazonaws.com. (93)
+16:37:47.917666 wlo1  Out IP 192.168.0.108.57699 > 192.168.0.1.53: 45923+ [1au] HTTPS? chatgpt.com. (40)
+16:37:49.073041 wlo1  Out IP6 fe80::83ee:dbdd:9c35:8e68 > ff02::2: ICMP6, router solicitation, length 8
+16:37:50.426747 wlo1  Out IP 192.168.0.108.39342 > 3.5.2.201.443: Flags [.], ack 3489074697, win 57, options [nop,nop,TS val 3635000105 ecr 1952261137], length 0
+16:37:50.433565 wlo1  In  IP6 fe80::83ee:dbdd:9c35:8e68 > ff02::2: ICMP6, router solicitation, length 8
+16:37:50.667596 wlo1  Out IP 192.168.0.108.52080 > 192.168.0.1.53: 40282+ [1au] HTTPS? ab.chatgpt.com. (43)
+16:37:50.677446 wlo1  In  IP 3.5.2.201.443 > 192.168.0.108.39342: Flags [R], seq 3489074697, win 0, length 0
+16:37:51.917586 wlo1  Out IP 192.168.0.108.52709 > 192.168.0.1.53: 5749+ [1au] HTTPS? clicks-inges-vjld0bvlni6m-1474043380.us-east-1.elb.amazonaws.com. (93)
+16:37:53.167609 wlo1  Out IP 192.168.0.108.57699 > 192.168.0.1.53: 45923+ [1au] HTTPS? chatgpt.com. (40)
+16:37:53.931177 wlo1  Out IP 192.168.0.108.41652 > 104.18.39.21.443: Flags [P.], seq 3033044456:3033044546, ack 307500167, win 59, options [nop,nop,TS val 1089122577 ecr 1402586304], length 90
+16:37:53.955714 wlo1  In  IP 104.18.39.21.443 > 192.168.0.108.41652: Flags [.], ack 90, win 17, options [nop,nop,TS val 1402596822 ecr 1089122577], length 0
+16:37:54.146676 wlo1  Out IP 192.168.0.108.35306 > 74.125.200.188.5228: Flags [.], ack 1433888334, win 57, options [nop,nop,TS val 2575405403 ecr 2430338140], length 0
+16:37:54.166598 wlo1  In  IP 104.18.39.21.443 > 192.168.0.108.41652: Flags [P.], seq 1:81, ack 90, win 17, options [nop,nop,TS val 1402597036 ecr 1089122577], length 80
+16:37:54.179588 wlo1  Out IP 192.168.0.108.35308 > 74.125.200.188.5228: Flags [.], ack 1859589454, win 57, options [nop,nop,TS val 2575405436 ecr 916492278], length 0
+16:37:54.207584 wlo1  Out IP 192.168.0.108.41652 > 104.18.39.21.443: Flags [.], ack 81, win 59, options [nop,nop,TS val 1089122854 ecr 1402597036], length 0
+16:37:54.228052 wlo1  In  IP 74.125.200.188.5228 > 192.168.0.108.35306: Flags [.], ack 1, win 1044, options [nop,nop,TS val 2430383220 ecr 2574433825], length 0
+16:37:54.266294 wlo1  In  IP 74.125.200.188.5228 > 192.168.0.108.35308: Flags [.], ack 1, win 1044, options [nop,nop,TS val 916537365 ecr 2574433757], length 0
+16:37:55.807374 wlo1  In  ARP, Request who-has 192.168.0.108 tell 192.168.0.1, length 28
+16:37:55.807388 wlo1  Out ARP, Reply 192.168.0.108 is-at 4a:2c:10:c6:25:3e, length 28
+16:37:55.917355 wlo1  Out IP 192.168.0.108.52080 > 192.168.0.1.53: 40282+ [1au] HTTPS? ab.chatgpt.com. (43)
+16:37:57.167417 wlo1  Out IP 192.168.0.108.52709 > 192.168.0.1.53: 5749+ [1au] HTTPS? clicks-inges-vjld0bvlni6m-1474043380.us-east-1.elb.amazonaws.com. (93)
+16:37:58.417436 wlo1  Out IP 192.168.0.108.57699 > 192.168.0.1.53: 45923+ [1au] HTTPS? chatgpt.com. (40)
+16:37:59.242831 wlo1  Out IP 192.168.0.108.51090 > 140.82.114.25.443: Flags [.], ack 1447849226, win 61, options [nop,nop,TS val 2544239959 ecr 1654095026], length 0
+16:37:59.593390 wlo1  In  IP 140.82.114.25.443 > 192.168.0.108.51090: Flags [.], ack 1, win 85, options [nop,nop,TS val 1654140450 ecr 2544194538], length 0
+16:38:01.167427 wlo1  Out IP 192.168.0.108.52080 > 192.168.0.1.53: 40282+ [1au] HTTPS? ab.chatgpt.com. (43)
+16:38:02.151672 wlo1  Out IP 192.168.0.108.41652 > 104.18.39.21.443: Flags [P.], seq 90:180, ack 81, win 59, options [nop,nop,TS val 1089130798 ecr 1402597036], length 90
+16:38:02.168307 wlo1  In  IP 104.18.39.21.443 > 192.168.0.108.41652: Flags [.], ack 180, win 17, options [nop,nop,TS val 1402605040 ecr 1089130798], length 0
+16:38:02.314703 wlo1  Out IP 192.168.0.108.40788 > 49.44.50.72.443: Flags [.], ack 552046638, win 63, options [nop,nop,TS val 1027965884 ecr 989125041], length 0
+16:38:02.333154 wlo1  In  IP 49.44.50.72.443 > 192.168.0.108.40788: Flags [.], ack 1, win 567, options [nop,nop,TS val 989170095 ecr 1027784902], length 0
+16:38:02.385940 wlo1  In  IP 104.18.39.21.443 > 192.168.0.108.41652: Flags [P.], seq 81:161, ack 180, win 17, options [nop,nop,TS val 1402605253 ecr 1089130798], length 80
+16:38:02.386017 wlo1  Out IP 192.168.0.108.41652 > 104.18.39.21.443: Flags [.], ack 161, win 59, options [nop,nop,TS val 1089131032 ecr 1402605253], length 0
+16:38:03.020432 wlo1  Out IP 192.168.0.108.41652 > 104.18.39.21.443: Flags [P.], seq 180:270, ack 161, win 59, options [nop,nop,TS val 1089131666 ecr 1402605253], length 90
+16:38:03.039653 wlo1  In  IP 104.18.39.21.443 > 192.168.0.108.41652: Flags [.], ack 270, win 17, options [nop,nop,TS val 1402605909 ecr 1089131666], length 0
+16:38:03.384071 wlo1  In  IP 104.18.39.21.443 > 192.168.0.108.41652: Flags [P.], seq 161:241, ack 270, win 17, options [nop,nop,TS val 1402606134 ecr 1089131666], length 80
+16:38:03.384073 wlo1  In  IP 104.18.39.21.443 > 192.168.0.108.41652: Flags [P.], seq 241:265, ack 270, win 17, options [nop,nop,TS val 1402606234 ecr 1089131666], length 24
+16:38:03.384172 wlo1  Out IP 192.168.0.108.41652 > 104.18.39.21.443: Flags [.], ack 241, win 59, options [nop,nop,TS val 1089132030 ecr 1402606134], length 0
+16:38:03.384202 wlo1  Out IP 192.168.0.108.41652 > 104.18.39.21.443: Flags [.], ack 265, win 59, options [nop,nop,TS val 1089132030 ecr 1402606234], length 0
+16:38:03.384578 wlo1  Out IP 192.168.0.108.41652 > 104.18.39.21.443: Flags [P.], seq 270:298, ack 265, win 59, options [nop,nop,TS val 1089132030 ecr 1402606234], length 28
+16:38:03.402001 wlo1  In  IP 104.18.39.21.443 > 192.168.0.108.41652: Flags [.], ack 298, win 17, options [nop,nop,TS val 1402606272 ecr 1089132030], length 0
+16:38:03.667431 wlo1  Out IP 192.168.0.108.57699 > 192.168.0.1.53: 45923+ [1au] HTTPS? chatgpt.com. (40)
+16:38:04.874651 wlo1  Out IP 192.168.0.108.35824 > 172.64.155.209.443: Flags [.], ack 3205167786, win 119, options [nop,nop,TS val 638303795 ecr 1702135175], length 0
+16:38:04.896366 wlo1  In  IP 172.64.155.209.443 > 192.168.0.108.35824: Flags [.], ack 1, win 25, options [nop,nop,TS val 1702180488 ecr 638258484], length 0
+16:38:08.917587 wlo1  Out IP 192.168.0.108.57699 > 192.168.0.1.53: 45923+ [1au] HTTPS? chatgpt.com. (40)
+16:38:11.126474 wlo1  Out IP 192.168.0.108.49385 > 142.251.223.100.443: UDP, length 1250
+16:38:11.126556 wlo1  Out IP 192.168.0.108.49385 > 142.251.223.100.443: UDP, length 1250
+16:38:11.126807 wlo1  Out IP 192.168.0.108.49385 > 142.251.223.100.443: UDP, length 82
+16:38:11.127351 wlo1  Out IP 192.168.0.108.49385 > 142.251.223.100.443: UDP, length 1246
+16:38:11.127385 wlo1  Out IP 192.168.0.108.49385 > 142.251.223.100.443: UDP, length 1176
+16:38:11.130341 wlo1  Out IP 192.168.0.108.50486 > 142.251.223.100.443: UDP, length 1250
+16:38:11.130374 wlo1  Out IP 192.168.0.108.50486 > 142.251.223.100.443: UDP, length 1250
+16:38:11.130395 wlo1  Out IP 192.168.0.108.50486 > 142.251.223.100.443: UDP, length 1250
+16:38:11.130576 wlo1  Out IP 192.168.0.108.50486 > 142.251.223.100.443: UDP, length 78
+16:38:11.130981 wlo1  Out IP 192.168.0.108.50486 > 142.251.223.100.443: UDP, length 1246
+16:38:11.130994 wlo1  Out IP 192.168.0.108.50486 > 142.251.223.100.443: UDP, length 866
+16:38:11.142759 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.49385: UDP, length 40
+16:38:11.147276 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.49385: UDP, length 1250
+16:38:11.150673 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.49385: UDP, length 1250
+16:38:11.152297 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.49385: UDP, length 304
+16:38:11.152950 wlo1  Out IP 192.168.0.108.49385 > 142.251.223.100.443: UDP, length 1250
+16:38:11.154315 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.49385: UDP, length 946
+16:38:11.154698 wlo1  Out IP 192.168.0.108.49385 > 142.251.223.100.443: UDP, length 31
+16:38:11.158606 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.50486: UDP, length 40
+16:38:11.159374 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.50486: UDP, length 40
+16:38:11.161739 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.50486: UDP, length 1250
+16:38:11.164979 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.50486: UDP, length 1250
+16:38:11.165801 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.49385: UDP, length 77
+16:38:11.170417 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.49385: UDP, length 24
+16:38:11.172752 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.50486: UDP, length 1250
+16:38:11.174967 wlo1  Out IP 192.168.0.108.50486 > 142.251.223.100.443: UDP, length 1250
+16:38:11.174994 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.49385: UDP, length 1246
+16:38:11.175379 wlo1  Out IP 192.168.0.108.49385 > 142.251.223.100.443: UDP, length 35
+16:38:11.177142 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.49385: UDP, length 853
+16:38:11.180003 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.50486: UDP, length 297
+16:38:11.180704 wlo1  Out IP 192.168.0.108.50486 > 142.251.223.100.443: UDP, length 78
+16:38:11.182897 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.50486: UDP, length 953
+16:38:11.183108 wlo1  Out IP 192.168.0.108.50486 > 142.251.223.100.443: UDP, length 31
+16:38:11.183883 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.50486: UDP, length 70
+16:38:11.185265 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.50486: UDP, length 24
+16:38:11.194599 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.50486: UDP, length 22
+16:38:11.194601 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.50486: UDP, length 120
+16:38:11.194676 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.49385: UDP, length 121
+16:38:11.194677 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.49385: UDP, length 23
+16:38:11.194943 wlo1  Out IP 192.168.0.108.50486 > 142.251.223.100.443: UDP, length 31
+16:38:11.195129 wlo1  Out IP 192.168.0.108.49385 > 142.251.223.100.443: UDP, length 31
+16:38:11.220641 wlo1  Out IP 192.168.0.108.50486 > 142.251.223.100.443: UDP, length 32
+16:38:11.226573 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.50486: UDP, length 1246
+16:38:11.226576 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.50486: UDP, length 701
+16:38:11.226577 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.50486: UDP, length 73
+16:38:11.227233 wlo1  Out IP 192.168.0.108.50486 > 142.251.223.100.443: UDP, length 35
+16:38:11.240807 wlo1  In  IP 142.251.223.100.443 > 192.168.0.108.50486: UDP, length 23
+16:38:11.253695 wlo1  Out IP 192.168.0.108.50486 > 142.251.223.100.443: UDP, length 32
+16:38:13.917694 wlo1  Out IP 192.168.0.108.57699 > 192.168.0.1.53: 45923+ [1au] HTTPS? chatgpt.com. (40)
+16:38:13.926324 wlo1  In  IP 140.82.114.25.443 > 192.168.0.108.51090: Flags [P.], seq 1:27, ack 1, win 85, options [nop,nop,TS val 1654154711 ecr 2544194538], length 26
+16:38:13.926648 wlo1  Out IP 192.168.0.108.51090 > 140.82.114.25.443: Flags [P.], seq 1:31, ack 27, win 61, options [nop,nop,TS val 2544254643 ecr 1654154711], length 30
+16:38:14.258256 wlo1  In  IP 140.82.114.25.443 > 192.168.0.108.51090: Flags [.], ack 31, win 85, options [nop,nop,TS val 1654155130 ecr 2544254643], length 0
+16:38:14.764727 wlo1  In  IP 157.90.91.73.443 > 192.168.0.108.55814: Flags [P.], seq 1:25, ack 1, win 487, options [nop,nop,TS val 2626398525 ecr 2513906840], length 24
+16:38:14.765083 wlo1  Out IP 192.168.0.108.55814 > 157.90.91.73.443: Flags [P.], seq 1:29, ack 25, win 54, options [nop,nop,TS val 2514027162 ecr 2626398525], length 28
+16:38:15.370756 wlo1  Out IP 192.168.0.108.55814 > 157.90.91.73.443: Flags [P.], seq 1:29, ack 25, win 54, options [nop,nop,TS val 2514027768 ecr 2626398525], length 28
+16:38:15.802963 wlo1  In  IP 157.90.91.73.443 > 192.168.0.108.55814: Flags [.], ack 29, win 487, options [nop,nop,TS val 2626399656 ecr 2514027768,nop,nop,sack 1 {1:29}], length 0
+16:38:20.745896 wlo1  Out IP 192.168.0.108.41652 > 104.18.39.21.443: Flags [P.], seq 298:388, ack 265, win 59, options [nop,nop,TS val 1089149392 ecr 1402606272], length 90
+16:38:20.766453 wlo1  In  IP 104.18.39.21.443 > 192.168.0.108.41652: Flags [.], ack 388, win 17, options [nop,nop,TS val 1402623635 ecr 1089149392], length 0
+16:38:21.205235 wlo1  In  IP 104.18.39.21.443 > 192.168.0.108.41652: Flags [P.], seq 265:344, ack 388, win 17, options [nop,nop,TS val 1402623854 ecr 1089149392], length 79
+16:38:21.245587 wlo1  Out IP 192.168.0.108.41652 > 104.18.39.21.443: Flags [.], ack 344, win 59, options [nop,nop,TS val 1089149892 ecr 1402623854], length 0
+16:38:22.794637 wlo1  Out IP 192.168.0.108.41894 > 100.49.119.149.443: Flags [.], ack 1165275092, win 63, options [nop,nop,TS val 4075932347 ecr 1935864266], length 0
+16:38:22.794754 wlo1  Out IP 192.168.0.108.50154 > 49.44.50.72.443: Flags [.], ack 287467081, win 63, options [nop,nop,TS val 1027986364 ecr 989145520], length 0
+16:38:22.794823 wlo1  Out IP 192.168.0.108.39358 > 104.18.32.47.443: Flags [.], ack 1056795400, win 60, options [nop,nop,TS val 805489505 ecr 3694215084], length 0
+16:38:22.813994 wlo1  In  IP 49.44.50.72.443 > 192.168.0.108.50154: Flags [.], ack 1, win 567, options [nop,nop,TS val 989190577 ecr 1027850657], length 0
+16:38:23.458337 wlo1  In  IP 100.49.119.149.443 > 192.168.0.108.41894: Flags [.], ack 1, win 391, options [nop,nop,TS val 1935912394 ecr 4075839078], length 0
+16:38:23.463337 wlo1  In  IP 104.18.39.21.443 > 192.168.0.108.41652: Flags [P.], seq 344:368, ack 388, win 17, options [nop,nop,TS val 1402626234 ecr 1089149892], length 24
+16:38:23.463427 wlo1  Out IP 192.168.0.108.41652 > 104.18.39.21.443: Flags [.], ack 368, win 59, options [nop,nop,TS val 1089152109 ecr 1402626234], length 0
+16:38:23.464370 wlo1  Out IP 192.168.0.108.41652 > 104.18.39.21.443: Flags [P.], seq 388:416, ack 368, win 59, options [nop,nop,TS val 1089152110 ecr 1402626234], length 28
+16:38:23.483615 wlo1  In  IP 104.18.39.21.443 > 192.168.0.108.41652: Flags [.], ack 416, win 17, options [nop,nop,TS val 1402626352 ecr 1089152110], length 0
+16:38:24.099212 wlo1  Out IP 192.168.0.108.41652 > 104.18.39.21.443: Flags [P.], seq 416:506, ack 368, win 59, options [nop,nop,TS val 1089152745 ecr 1402626352], length 90
+16:38:24.125860 wlo1  In  IP 104.18.39.21.443 > 192.168.0.108.41652: Flags [.], ack 506, win 17, options [nop,nop,TS val 1402626990 ecr 1089152745], length 0
+16:38:24.482105 wlo1  In  IP 104.18.39.21.443 > 192.168.0.108.41652: Flags [P.], seq 368:447, ack 506, win 17, options [nop,nop,TS val 1402627204 ecr 1089152745], length 79
+16:38:24.522600 wlo1  Out IP 192.168.0.108.41652 > 104.18.39.21.443: Flags [.], ack 447, win 59, options [nop,nop,TS val 1089153169 ecr 1402627204], length 0
+16:38:25.732654 wlo1  Out IP 192.168.0.108.57652 > 160.250.111.199.123: NTPv4, Client, length 48
+16:38:25.775852 wlo1  In  IP 160.250.111.199.123 > 192.168.0.108.57652: NTPv4, Server, length 48
+16:38:27.210960 wlo1  Out IP 192.168.0.108.45391 > 162.159.200.1.123: NTPv4, Client, length 48
+16:38:27.231724 wlo1  In  IP 162.159.200.1.123 > 192.168.0.108.45391: NTPv4, Server, length 48
+16:38:27.402856 wlo1  Out IP 192.168.0.108.55670 > 157.90.91.73.443: Flags [.], ack 3218157049, win 51, options [nop,nop,TS val 2514039800 ecr 2626366333], length 0
+16:38:27.656938 wlo1  In  IP 157.90.91.73.443 > 192.168.0.108.55670: Flags [.], ack 1, win 490, options [nop,nop,TS val 2626411653 ecr 2513994483], length 0
+16:38:27.660207 wlo1  Out IP 192.168.0.108.37593 > 139.59.15.185.123: NTPv4, Client, length 48
+16:38:27.720095 wlo1  In  IP 139.59.15.185.123 > 192.168.0.108.37593: NTPv4, Server, length 48
+16:38:27.860862 wlo1  Out IP 192.168.0.108.58989 > 14.139.60.106.123: NTPv4, Client, length 48
+16:38:27.880083 wlo1  In  IP 14.139.60.106.123 > 192.168.0.108.58989: NTPv4, Server, length 48
+
+129 packets captured
+129 packets received by filter
+0 packets dropped by kernel
