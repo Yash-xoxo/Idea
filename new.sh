@@ -2,50 +2,41 @@
 set -euo pipefail
 
 # ================= CONFIG =================
-REPO_DIR="$HOME/net-capture-repo"
-REMOTE_URL="git@github.com:YOUR_USERNAME/YOUR_REPO.git"
+REPO_DIR="/home/yash/git_push_things/Idea"
+WORKDIR="$REPO_DIR/autologs"
+OUTDIR="$WORKDIR/data"
+TS="$(date +'%Y-%m-%d_%H-%M-%S')"
+OUTFILE="$OUTDIR/netdump_$TS.txt"
 BRANCH="main"
 
-CAPTURE_DIR="$REPO_DIR/data"
-TS="$(date +'%Y-%m-%d_%H-%M-%S')"
-OUTFILE="$CAPTURE_DIR/netdump_$TS.txt"
+echo "[INIT] config loaded"
 
-# ================= STAGE 0: INIT =================
-mkdir -p "$CAPTURE_DIR"
+# ================= STAGE 0: PRE-FLIGHT =================
+mkdir -p "$OUTDIR"
 cd "$REPO_DIR"
 
-if [ ! -d ".git" ]; then
-  echo "[INIT] initializing git repo"
-  git init
-  git branch -M "$BRANCH"
-  git remote add origin "$REMOTE_URL"
-
-  echo "[INIT] bootstrap commit"
-  echo "# Network Captures" > README.md
-  git add README.md
-  git commit -m "init: repository bootstrap"
-  git push -u origin "$BRANCH"
-fi
-
-echo "[OK] git repo ready"
+git rev-parse --is-inside-work-tree >/dev/null
+echo "[OK] repo verified"
 
 # ================= STAGE 1: CAPTURE =================
-echo "[RUN] tcpdump capture"
+echo "[RUN] starting tcpdump"
 /usr/bin/timeout -k 2s -s SIGINT 10s \
   /usr/sbin/tcpdump -i any -nn -XX -U ip \
   > "$OUTFILE" 2>&1
 
+echo "[OK] capture finished"
+
 # ================= STAGE 2: VALIDATION =================
 if [ ! -s "$OUTFILE" ]; then
-  echo "ERROR: empty capture, aborting"
+  echo "ERROR: empty capture — aborting"
   exit 1
 fi
 
-echo "[OK] capture validated"
+echo "[OK] validation done"
 
-# ================= STAGE 3: COMMIT + PUSH =================
-git add data/
-git commit -m "auto: tcpdump capture $TS"
+# ================= STAGE 3: VERSION + PUSH =================
+git add autologs/
+git commit -m "auto: tcpdump capture $TS" || echo "[INFO] nothing new to commit"
 git push origin "$BRANCH"
 
 echo "[DONE] capture committed and pushed"

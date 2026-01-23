@@ -1,18 +1,28 @@
 #!/bin/bash
 
+#!/bin/bash
+
 # ================= CONFIG =================
-WORKDIR="$HOME/autologs"
+REPO_ROOT="$(cd "$(dirname "$0")" && pwd)"
+WORKDIR="$REPO_ROOT/autologs"
 OUTDIR="$WORKDIR/data"
+
 TS="$(date +'%Y-%m-%d_%H-%M-%S')"
 OUTFILE="$OUTDIR/netdump_$TS.txt"
 BRANCH="main"
 
-echo "[INIT] config loaded"
+echo "[INIT] repo=$REPO_ROOT"
 
 # ================= STAGE 0: PRE-FLIGHT =================
+cd "$REPO_ROOT" || exit 1
+
+if [ ! -d ".git" ]; then
+  echo "ERROR: not inside a git repository"
+  exit 2
+fi
+
 mkdir -p "$OUTDIR"
-cd "$WORKDIR"
-sleep 4
+sleep 1
 echo "[OK] pre-flight done"
 
 # ================= STAGE 1: CAPTURE (50s HARD CAP) =================
