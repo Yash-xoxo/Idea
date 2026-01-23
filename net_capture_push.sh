@@ -35,7 +35,7 @@ echo "[RUN] starting tcpdump"
 
 # -U = packet-buffered (forces write)
 # timeout with KILL fallback guarantees exit
-/usr/bin/timeout -k 5s -s SIGINT 10s \
+/usr/bin/timeout -k 2s -s SIGINT 30s \
   /usr/sbin/tcpdump -i any -nn -XX -U ip \
   > "$OUTFILE" 2>&1
 
