@@ -1,6 +1,11 @@
 #!/bin/bash
+TIMEOUT_BIN="$(command -v timeout)"
+TCPDUMP_BIN="$(command -v tcpdump)"
 
-#!/bin/bash
+if [ -z "$TIMEOUT_BIN" ] || [ -z "$TCPDUMP_BIN" ]; then
+  echo "ERROR: timeout or tcpdump not found"
+  exit 10
+fi
 
 # ================= CONFIG =================
 REPO_ROOT="$(cd "$(dirname "$0")" && pwd)"
