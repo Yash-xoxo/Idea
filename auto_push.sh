@@ -1,6 +1,6 @@
 #!/bin/bash
 set -euo pipefail
-
+#why
 # ================= CONFIG =================
 REPO_ROOT="$(cd "$(dirname "$0")" && pwd)"
 WORKDIR="$REPO_ROOT/autologs"
