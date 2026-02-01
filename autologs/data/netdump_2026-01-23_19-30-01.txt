@@ -1,0 +1,25 @@
+tcpdump: data link type LINUX_SLL2
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+19:30:08.588813 eth0  M   IP 192.168.31.1 > 224.0.0.1: igmp query v3 [max resp time 2.0s]
+	0x0000:  0800 0000 0000 0002 0001 0206 543d 60ab  ............T=`.
+	0x0010:  4644 0000 46c0 0024 b667 4000 0102 6e01  FD..F..$.g@...n.
+	0x0020:  c0a8 1f01 e000 0001 9404 0000 1114 ede5  ................
+	0x0030:  0000 0000 0106 0000 0000 0000 0000 0000  ................
+	0x0040:  0000                                     ..
+19:30:14.588263 eth0  M   IP 192.168.31.1 > 224.0.0.1: igmp query v3 [max resp time 2.0s]
+	0x0000:  0800 0000 0000 0002 0001 0206 543d 60ab  ............T=`.
+	0x0010:  4644 0000 46c0 0024 b7b1 4000 0102 6cb7  FD..F..$..@...l.
+	0x0020:  c0a8 1f01 e000 0001 9404 0000 1114 ede5  ................
+	0x0030:  0000 0000 0106 0000 0000 0000 0000 0000  ................
+	0x0040:  0000                                     ..
+19:30:20.592608 eth0  M   IP 192.168.31.1 > 224.0.0.1: igmp query v3 [max resp time 2.0s]
+	0x0000:  0800 0000 0000 0002 0001 0206 543d 60ab  ............T=`.
+	0x0010:  4644 0000 46c0 0024 b90c 4000 0102 6b5c  FD..F..$..@...k\
+	0x0020:  c0a8 1f01 e000 0001 9404 0000 1114 ede5  ................
+	0x0030:  0000 0000 0106 0000 0000 0000 0000 0000  ................
+	0x0040:  0000                                     ..
+
+3 packets captured
+3 packets received by filter
+0 packets dropped by kernel

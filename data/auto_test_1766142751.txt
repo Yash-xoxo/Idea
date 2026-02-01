@@ -1,0 +1,32 @@
+tcpdump: WARNING: any: That device doesn't support promiscuous mode
+(Promiscuous mode not supported on the "any" device)
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+16:42:32.650767 wlo1  Out IP 192.168.0.108.38006 > 16.15.191.255.443: Flags [.], ack 1913952386, win 57, options [nop,nop,TS val 3101323916 ecr 1300882691], length 0
+16:42:32.650840 wlo1  Out IP 192.168.0.108.53504 > 172.66.161.126.443: Flags [.], ack 2197460617, win 334, options [nop,nop,TS val 54242948 ecr 4264669824], length 0
+16:42:32.667639 wlo1  Out IP 192.168.0.108.45364 > 192.168.0.1.53: 6842+ [1au] HTTPS? www.googleapis.com. (47)
+16:42:32.676651 wlo1  Out IP 192.168.0.108.35306 > 74.125.200.188.5228: Flags [.], ack 1433888334, win 57, options [nop,nop,TS val 2575683933 ecr 2430616670], length 0
+16:42:32.707721 wlo1  Out IP 192.168.0.108.35308 > 74.125.200.188.5228: Flags [.], ack 1859589454, win 57, options [nop,nop,TS val 2575683964 ecr 916770806], length 0
+16:42:32.754230 wlo1  In  IP 74.125.200.188.5228 > 192.168.0.108.35306: Flags [.], ack 1, win 1044, options [nop,nop,TS val 2430661748 ecr 2574433825], length 0
+16:42:32.788846 wlo1  In  IP 172.66.161.126.443 > 192.168.0.108.53504: Flags [.], ack 1, win 16, options [nop,nop,TS val 4264761981 ecr 54105409], length 0
+16:42:32.792994 wlo1  In  IP 74.125.200.188.5228 > 192.168.0.108.35308: Flags [.], ack 1, win 1044, options [nop,nop,TS val 916815890 ecr 2574433757], length 0
+16:42:32.851747 wlo1  Out IP 192.168.0.108.56456 > 3.213.49.30.443: Flags [.], ack 1053707454, win 59, options [nop,nop,TS val 3135033074 ecr 1015215207], length 0
+16:42:32.889849 wlo1  In  IP 16.15.191.255.443 > 192.168.0.108.38006: Flags [R], seq 1913952386, win 0, length 0
+16:42:33.167423 wlo1  Out IP 192.168.0.108.60000 > 192.168.0.1.53: 30368+ [1au] HTTPS? github.githubassets.com. (52)
+16:42:33.167476 wlo1  Out IP 192.168.0.108.46216 > 192.168.0.1.53: 44016+ [1au] HTTPS? s3-w.us-east-1.amazonaws.com. (57)
+16:42:33.173060 wlo1  In  IP 3.213.49.30.443 > 192.168.0.108.56456: Flags [.], ack 1, win 292, options [nop,nop,TS val 1015260460 ecr 3134895786], length 0
+16:42:34.667448 wlo1  Out IP 192.168.0.108.57158 > 192.168.0.1.53: 14812+ [1au] HTTPS? live.github.com. (44)
+16:42:34.917414 wlo1  Out IP 192.168.0.108.44764 > 192.168.0.1.53: 43030+ [1au] HTTPS? clients.l.google.com. (49)
+16:42:34.924853 wlo1  In  IP 104.18.36.252.443 > 192.168.0.108.54276: Flags [P.], seq 2940184028:2940184163, ack 3888366179, win 18, options [nop,nop,TS val 2408517588 ecr 3037603698], length 135
+16:42:34.925178 wlo1  Out IP 192.168.0.108.54276 > 104.18.36.252.443: Flags [P.], seq 1:29, ack 135, win 61, options [nop,nop,TS val 3037618619 ecr 2408517588], length 28
+16:42:34.926091 wlo1  Out IP 192.168.0.108.54276 > 104.18.36.252.443: Flags [P.], seq 29:149, ack 135, win 61, options [nop,nop,TS val 3037618620 ecr 2408517588], length 120
+16:42:34.940650 wlo1  In  IP 104.18.36.252.443 > 192.168.0.108.54276: Flags [.], ack 29, win 18, options [nop,nop,TS val 2408517631 ecr 3037618619], length 0
+16:42:34.940652 wlo1  In  IP 104.18.36.252.443 > 192.168.0.108.54276: Flags [.], ack 149, win 18, options [nop,nop,TS val 2408517632 ecr 3037618620], length 0
+16:42:35.364638 wlo1  In  IP 54.186.61.241.443 > 192.168.0.108.44160: Flags [P.], seq 2149944458:2149944497, ack 4248582225, win 187, options [nop,nop,TS val 1147228993 ecr 2199351856], length 39
+16:42:35.364640 wlo1  In  IP 54.186.61.241.443 > 192.168.0.108.44160: Flags [P.], seq 39:63, ack 1, win 187, options [nop,nop,TS val 1147228993 ecr 2199351856], length 24
+16:42:35.364641 wlo1  In  IP 54.186.61.241.443 > 192.168.0.108.44160: Flags [F.], seq 63, ack 1, win 187, options [nop,nop,TS val 1147228993 ecr 2199351856], length 0
+16:42:35.405811 wlo1  Out IP 192.168.0.108.44160 > 54.186.61.241.443: Flags [.], ack 64, win 63, options [nop,nop,TS val 2199471830 ecr 1147228993], length 0
+
+24 packets captured
+30 packets received by filter
+0 packets dropped by kernel
