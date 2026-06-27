@@ -35,6 +35,14 @@ echo "[RUN] starting tcpdump"
 
 # -U = packet-buffered (forces write)
 # timeout with KILL fallback guarantees exit
+echo "User: $(whoami)"
+echo "UID: $(id -u)"
+echo "TIMEOUT_BIN=$TIMEOUT_BIN"
+echo "TCPDUMP_BIN=$TCPDUMP_BIN"
+
+getcap "$TCPDUMP_BIN"
+"$TCPDUMP_BIN" -D
+
 "$TIMEOUT_BIN" -k 2s -s SIGINT 20s \
     "$TCPDUMP_BIN" -i any -nn -XX -U ip \
     > "$OUTFILE" 2>&1
