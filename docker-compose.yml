@@ -1,0 +1,9 @@
+services:
+  demo-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: demo-web
+    ports:
+      - "127.0.0.1:9090:80"
+    restart: unless-stopped
