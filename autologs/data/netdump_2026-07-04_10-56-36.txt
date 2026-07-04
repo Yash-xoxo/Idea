@@ -1,0 +1,28 @@
+tcpdump: WARNING: any: That device doesn't support promiscuous mode
+(Promiscuous mode not supported on the "any" device)
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+10:56:46.044371 eth0  Out IP 172.22.30.244.56541 > 91.189.91.112.123: NTPv4, Client, length 256
+	0x0000:  0800 0000 0000 0002 0001 0406 0015 5db4  ..............].
+	0x0010:  7824 0000 4500 011c a01c 4000 4011 177d  x$..E.....@.@..}
+	0x0020:  ac16 1ef4 5bbd 5b70 dcdd 007b 0108 8351  ....[.[p...{...Q
+	0x0030:  2300 0720 0000 0000 0000 0000 0000 0000  #...............
+	0x0040:  0000 0000 0000 0000 0000 0000 0000 0000  ................
+	0x0050:  0000 0000 0000 0000 798f 42b4 2a28 9111  ........y.B.*(..
+	0x0060:  0104 0024 956e a519 27f6 a0fa 1deb 7542  ...$.n..'.....uB
+	0x0070:  dd8c 0d77 9756 d9e8 06fb 5d1f c671 100c  ...w.V....]..q..
+	0x0080:  2129 7999 0204 0044 1899 44a4 a975 4f7a  !)y....D..D..uOz
+	0x0090:  0bd3 a47c a976 1aad f584 9da7 1338 325d  ...|.v.......82]
+	0x00a0:  b12c b3c8 bee2 caa6 a19a 8753 7122 6f22  .,.........Sq"o"
+	0x00b0:  05bc 4498 27ba e50e 8308 c088 f4e4 5f04  ..D.'........._.
+	0x00c0:  59a0 901d afea 31cb 0304 0044 0000 0000  Y.....1....D....
+	0x00d0:  0000 0000 0000 0000 0000 0000 0000 0000  ................
+	0x00e0:  0000 0000 0000 0000 0000 0000 0000 0000  ................
+	0x00f0:  0000 0000 0000 0000 0000 0000 0000 0000  ................
+	0x0100:  0000 0000 0000 0000 0000 0000 0404 0024  ...............$
+	0x0110:  000c 0010 c419 d05e bdee 4004 718b 8f2a  .......^..@.q..*
+	0x0120:  1af4 59a4 b1da d402 7dc0 0b5d d2fe a323  ..Y.....}..]...#
+
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
