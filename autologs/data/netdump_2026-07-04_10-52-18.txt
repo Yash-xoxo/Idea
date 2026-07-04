@@ -1,0 +1,40 @@
+tcpdump: WARNING: any: That device doesn't support promiscuous mode
+(Promiscuous mode not supported on the "any" device)
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+10:52:27.660697 eth0  Out IP 172.22.30.244.50746 > 91.189.91.112.123: NTPv4, Client, length 188
+	0x0000:  0800 0000 0000 0002 0001 0406 0015 5db4  ..............].
+	0x0010:  7824 0000 4500 00d8 ff7d 4000 4011 b85f  x$..E....}@.@.._
+	0x0020:  ac16 1ef4 5bbd 5b70 c63a 007b 00c4 830d  ....[.[p.:.{....
+	0x0030:  2300 0720 0000 0000 0000 0000 0000 0000  #...............
+	0x0040:  0000 0000 0000 0000 0000 0000 0000 0000  ................
+	0x0050:  0000 0000 0000 0000 493f 7463 b991 0dd4  ........I?tc....
+	0x0060:  0104 0024 0f6b d0d4 19bf 9580 2527 c3ea  ...$.k......%'..
+	0x0070:  e575 aca3 3a78 f200 5c27 f6b4 bdc3 dbff  .u..:x..\'......
+	0x0080:  0401 5163 0204 0044 1899 44a4 23e2 fe2d  ..Qc...D..D.#..-
+	0x0090:  b925 8a3c b593 8bb2 2cac 0e5b b9e1 8655  .%.<....,..[...U
+	0x00a0:  95e9 db63 f991 b5d5 37df 401e 304a 4819  ...c....7.@.0JH.
+	0x00b0:  62ae da1d d0d2 9270 4fc9 24c2 a4f6 ed38  b......pO.$....8
+	0x00c0:  53ab 75d9 b249 3fa1 0404 0024 000c 0010  S.u..I?....$....
+	0x00d0:  3ce6 0a2d e738 3a28 9bb7 eebd e8f4 ffe1  <..-.8:(........
+	0x00e0:  1900 4c3e 9919 5d16 1fe6 adbe            ..L>..].....
+10:52:27.897902 eth0  In  IP 91.189.91.112.123 > 172.22.30.244.50746: NTPv4, Server, length 188
+	0x0000:  0800 0000 0000 0002 0001 0006 0015 5dbd  ..............].
+	0x0010:  f38d 0000 4520 00d8 a4da 4000 3111 21e3  ....E.....@.1.!.
+	0x0020:  5bbd 5b70 ac16 1ef4 007b c63a 00c4 4abc  [.[p.....{.:..J.
+	0x0030:  2402 07e7 0000 0b1f 0000 028f 84a3 6001  $.............`.
+	0x0040:  edf3 4072 b3cd dde1 493f 7463 b991 0dd4  ..@r....I?tc....
+	0x0050:  edf3 646c edf7 d391 edf3 646c edfa 114e  ..dl......dl...N
+	0x0060:  0104 0024 0f6b d0d4 19bf 9580 2527 c3ea  ...$.k......%'..
+	0x0070:  e575 aca3 3a78 f200 5c27 f6b4 bdc3 dbff  .u..:x..\'......
+	0x0080:  0401 5163 0404 0068 000c 0054 566d dc3b  ..Qc...h...TVm.;
+	0x0090:  6055 4a94 79c0 ffcb 0713 4ad9 4850 eec5  `UJ.y.....J.HP..
+	0x00a0:  8da1 c78c ed8e 9fc7 fdf2 e187 0752 f0fe  .............R..
+	0x00b0:  56ad 1abd a385 ada9 55bb c2b8 ec97 30aa  V.......U.....0.
+	0x00c0:  a116 054c d521 adb7 afc9 a3b1 1788 8ba5  ...L.!..........
+	0x00d0:  943b 22e5 b3b0 9732 bfe3 9737 e227 6072  .;"....2...7.'`r
+	0x00e0:  68f0 5aa6 ad81 d265 47c9 4909            h.Z....eG.I.
+
+2 packets captured
+2 packets received by filter
+0 packets dropped by kernel
